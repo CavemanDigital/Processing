@@ -6,7 +6,6 @@
   int n=0;
   int[] player=new int[players];
   int[][] istaken = new int[col][row];
-  boolean[][] checked = new boolean[col][row]; 
   
 
 void  setup(){
@@ -25,7 +24,6 @@ void  setup(){
 
 void draw(){}
 void mousePressed(){ 
-     for(int g=0; g<col; g++) { for(int b=0; b< row; b++) { checked[g][b]=false; }}
      int theCol=mouseX/colwidth;
      int theRow=mouseY/rowheight;
      int piece=player[n];
